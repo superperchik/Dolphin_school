@@ -74,6 +74,7 @@ body {
     background-color: #f1f3fe;
   }
   
+  /* Навигационная панель слева */
   .page-menu {
     grid-area: navigation;
     
@@ -179,7 +180,7 @@ body {
     width: 20px;
     height: 20px;
     left: 30px;
-    background-image: url("/images/main/home.png");
+    background-image: url("/images/main/cabinet.png");
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -194,42 +195,22 @@ body {
     color: #576bcc;
   }
   
-  /* .search {
-    margin-top: 10px;
-    margin-left: 30px;
-  }
   
-  .search-field {
-    padding: 20px 20px 20px 32px;
-  
-    font-family: inherit;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
-    color: #3c425f;
-    border: none;
-    background-image: url("https://assets.htmlacademy.ru/content/skills/6/case-01/img/search.svg");
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 20px 20px;
-  }
-  
-  .search-field::placeholder {
-    color: #b4bef0;
-  }
-  
+  /* Верхняя часть сайта */
   .profile {
+    position: absolute;
+    right: 120px;
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-gap: 10px;
     max-width: 400px;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-right: 20px;
+    
   }
   
   .item-with-picture::before {
-    content: attr(data-text);
+    content: attr(x);
     width: 40px;
     height: 40px;
     
@@ -270,34 +251,23 @@ body {
     border-bottom-color: transparent;
   }
   
-  .notifications-btn {
-    width: 25px;
+  .english-btn {
+   
+    width: 55px;
     height: 25px;
     margin: 27px;
+    position: absolute;
+    right: 10px;
+    appearance: none;
+    border: 0;
+    background: #576bcc;
+    color: #fff;
     
-    background-image: url("https://assets.htmlacademy.ru/content/skills/6/case-01/img/notifications.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 20px 20px;
-    background-color: transparent;
-    border: none;
+    font-size: 16px;
+    
   }
   
-  .notifications-btn span {
-    display: inline-block;
-    position: relative;
-    right: -5px;
-    top: -5px;
-    width: 14px;
-    height: 14px;
-    font-weight: 900;
-    font-size: 10px;
-    line-height: 14px;
-    color: #ffffff;
-    background-color: #ff8f0b;
-    border-radius: 50%;
-    border: 2px solid #ffffff;
-  }
+  
   
   .slider {
     position: relative;
@@ -610,7 +580,7 @@ body {
   
   
 
-   */
+   
    .copyright {
     margin: 20px 10px 10px 30px;
     
