@@ -1,178 +1,158 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css" type="text/css">
-    <!-- <link href="https://assets.htmlacademy.ru/content/skills/6/case-01/outline.css" rel="stylesheet"> -->
-    <title>Dolphin school, языковая школа</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css" type="text/css">
+  <!-- <link href="https://assets.htmlacademy.ru/content/skills/6/case-01/outline.css" rel="stylesheet"> -->
+  <title>Dolphin school, языковая школа</title>
 
 </head>
-<body class="page container">
-    <nav class="page-menu">
-      <a class="logo" href="#">
-        <img class="logo-img" src="" width="200" height="80" alt="Dolphin, языковая школа" >
-      </a>
-      <ul class="page-menu-list">
-        <li class="page-menu-item page-menu-item-active">
-          <a class="page-menu-link page-menu-link-cab">Главная</a>
-        </li>
-        <li class="page-menu-item">
-          <a class="page-menu-link page-menu-link-book" href="#">Методичка</a>
-        </li>
-        <li class="page-menu-item">
-          <a class="page-menu-link page-menu-link-home" href="#">Домашняя работа</a>
-        </li>
-        <li class="page-menu-item">
-          <a class="page-menu-link page-menu-link-exam" href="#">Тесты</a>
-        </li>
-      </ul>
-      <ul class="page-menu-tools">
-        <li class="page-menu-tools-item">
-          <a class="page-menu-tools-link" href="#">Личный кабинет</a>
-        </li>
-      </ul>
-    </nav>
-    <header class="page-header">
-      <div class="profile item-with-picture" data-text="О">
-        <a class="profile-name" href="#">Ученик 1 уровня</a>
-        <button class="profile-btn" type="button"><span class="visually-hidden">Открыть/Закрыть меню</span></button>
-      </div>
-      
-        <button class="english-btn" type="button"><span>ENG</span></button>
-     
-    </header>
-    <!-- 
-    <main class="page-main">
-      <h1 class="visually-hidden">Главная страница сайта языковой школы Let’s Speak</h1>
-      <div class="slider">
-        <img class="slider-img" src="%D0%A4%D0%B8%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%B2%D0%B5%D1%80%D1%81%D1%82%D0%BA%D0%B0_files/image-01.jpg" alt="Бигбен на фоне голубого облачного неба" width="820" height="300">
-        <p class="slider-headline">«Бифитер», «Кокни», «Даблдекер»...</p>
-        <p class="slider-text">Пройдите тест и узнайте насколько хорошо вы знакомы с жизнью в Лондоне</p>
-        <a href="#">Пройти тест ➞</a>
-        <button class="slider-btn slider-btn-prev" type="button"><span class="visually-hidden">Назад</span></button>
-        <button class="slider-btn slider-btn-next" type="button"><span class="visually-hidden">Вперёд</span></button>
-      </div>
-      <section class="offers">
-        <h2 class="visually-hidden">Интересные предложения</h2>
-        <ul class="offers-list">
-          <li class="offers-item">
-            <h3>Английский завтрак</h3>
-            <div class="offer-content">
-              <p class="offers-item-text">Разговорный клуб</p>
-              <p class="offers-item-time">10:00 — 11:00 (ПН—ПТ)</p>
-            </div>
-            <div class="offer-footer">
-              <a href="#">Записаться ➞</a>
-            </div>
-          </li>
-          <li class="offers-item">
-            <h3>Лето в Лондоне</h3>
-            <div class="offer-content">
-              <p class="offers-item-text">Месяц экскурсий и практики</p>
-              <p class="offers-item-time">10 июня — 3 июля</p>
-            </div>
-            <div class="offer-footer">
-              <a href="#">Отправиться ➞</a>
-            </div>
-          </li>
-          <li class="offers-item">
-            <h3>Надоел английский?</h3>
-            <div class="offer-content">
-              <p class="offers-item-text">С нами можно выучить и другие языки</p>
-            </div>
-            <div class="offer-footer">
-              <a href="#">Открыть список ➞</a>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <section class="video">
-        <h2 class="visually-hidden">Просмотр видео уроков</h2>
-        <video class="lesson-video" poster="https://assets.htmlacademy.ru/content/skills/6/case-01/img/image-18.jpg" width="540" height="300">
-          <source src="%D0%A4%D0%B8%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%B2%D0%B5%D1%80%D1%81%D1%82%D0%BA%D0%B0_files/video.html" type="video/mp4">
-        </video>
-        <div class="video-play-list-wrapper">
-          <h3>Курс English A1</h3>
-          <ul class="play-list">
-            <li class="play-item">
-              <button class="play-button" type="button"><span class="visually-hidden">Пуск/Стоп</span></button>
-              <h4>Урок 8</h4>
-              <p>Времена глаголов</p>
-            </li>
-            <li class="play-item play-item-active">
-              <button class="play-button" type="button"><span class="visually-hidden">Пуск/Стоп</span></button>
-              <h4>Урок 9</h4>
-              <p>Неправильные глаголы</p>
-            </li>
-            <li class="play-item">
-              <button class="play-button" type="button"><span class="visually-hidden">Пуск/Стоп</span></button>
-              <h4>Урок 10</h4>
-              <p>Present Simple</p>
-            </li>
-            <li class="play-item">
-              <button class="play-button" type="button"><span class="visually-hidden">Пуск/Стоп</span></button>
-              <h4>Урок 11</h4>
-              <p>Past Simple</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="contacts">
-        <h2>Контакты</h2>
-        <ul class="contact-list">
-          <li class="contact-item">
-            <a class="contact-link item-with-picture" data-text="Н" href="#">
-              <p class="contact-name">Неопознанный Енот</p>
-              <p class="contact-lang">English A1</p>
-            </a>
-          </li>
-          <li class="contact-item">
-            <a class="contact-link item-with-picture" data-text="Н" href="#">
-              <p class="contact-name">Неопознанный Енот 2</p>
-              <p class="contact-lang">Español 2</p>
-            </a>
-          </li>
-          <li class="contact-item">
-            <a class="contact-link item-with-picture" data-text="Н" href="#">
-              <p class="contact-name">Неопознанный Енот 3</p>
-              <p class="contact-lang">日本語</p>
-            </a>
-          </li>
-          <li class="contact-item">
-            <a class="contact-link item-with-picture" data-text="Н" href="#">
-              <p class="contact-name">Неопознанный Енот 4</p>
-              <p class="contact-lang">English B2</p>
-            </a>
-          </li>
-          <li class="contact-item">
-            <a class="contact-link item-with-picture" data-text="Н" href="#">
-              <p class="contact-name">Неопознанный Енот 5</p>
-              <p class="contact-lang">Le Français</p>
-            </a>
-          </li>
-          <li class="contact-item">
-            <a class="contact-link item-with-picture" data-text="Н" href="#">
-              <p class="contact-name">Неопознанный Енот 6</p>
-              <p class="contact-lang">Español 1</p>
-            </a>
-          </li>
-          <li class="contact-item">
-            <a class="contact-link item-with-picture" data-text="Н" href="#">
-              <p class="contact-name">Неопознанный Енот 7</p>
-              <p class="contact-lang">Italiano</p>
-            </a>
-          </li>
-        </ul>
-      </section>
-    </main>
-     -->
-     <footer class="page-footer">
-      <p class="copyright"> 2022</p>
-      <a class="page-footer-logo" href="#"><b>Dolphin school</b>, языковая школа</a>
-      <p class="copyright-details"> <a href="https://vk.com/id161066998" target="_blank">Сайт создан Иваном Поддубным</a></p>
-    </footer>
 
-</body></html>
+<body class="page container">
+  <nav class="page-menu">
+    <a class="logo" href="#">
+      <img class="logo-img" src="/images/main/logotip.jpg"  alt="Dolphin, языковая школа">
+    </a>
+    <ul class="page-menu-list">
+      <li class="page-menu-item page-menu-item-active">
+        <a class="page-menu-link page-menu-link-cab">Главная</a>
+      </li>
+      <li class="page-menu-item">
+        <a class="page-menu-link page-menu-link-book" href="#">Методичка</a>
+      </li>
+      <li class="page-menu-item">
+        <a class="page-menu-link page-menu-link-home" href="#">Домашняя работа</a>
+      </li>
+      <li class="page-menu-item">
+        <a class="page-menu-link page-menu-link-exam" href="#">Тесты</a>
+      </li>
+    </ul>
+    <ul class="page-menu-tools">
+      <li class="page-menu-tools-item">
+        <a class="page-menu-tools-link" href="#">Личный кабинет</a>
+      </li>
+    </ul>
+  </nav>
+  <header class="page-header">
+    <div class="profile item-with-picture" data-text="О">
+      <a class="profile-name" href="#">Ученик 1 уровня</a>
+      <button class="profile-btn" type="button"><span class="visually-hidden">Открыть/Закрыть меню</span></button>
+    </div>
+
+    <button class="english-btn" type="button"><span>ENG</span></button>
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">Главная страница сайта языковой школы Let’s Speak</h1>
+    <div class="slider">
+      <img class="slider-img" src="/images/main/London.jpg" alt="Бигбен на фоне голубого облачного неба" width="1200"
+        height="300">
+      <img class="slider-img blue" src="/images/main/blue-2.jpg" width="1200" height="300">
+
+      <p class="slider-headline">«Бифитер», «Кокни», «Даблдекер»...</p>
+      <p class="slider-text">Пройдите тест и узнайте насколько хорошо вы знакомы с жизнью в Лондоне</p>
+      <a href="#">Пройти тест ➞</a>
+
+    </div>
+    <section class="offers">
+      <h2 class="visually-hidden">Интересные предложения</h2>
+      <ul class="offers-list">
+        <li class="offers-item">
+          <h3>Английский завтрак</h3>
+          <div class="offer-content">
+            <p class="offers-item-text">Разговорный клуб</p>
+            <p class="offers-item-time">10:00 — 11:00 (ПН—ПТ)</p>
+          </div>
+          <div class="offer-footer">
+            <a href="#">Записаться ➞</a>
+          </div>
+        </li>
+        <li class="offers-item">
+          <h3>Лето в Лондоне</h3>
+          <div class="offer-content">
+            <p class="offers-item-text">Месяц экскурсий и практики</p>
+            <p class="offers-item-time">10 июня — 3 июля</p>
+          </div>
+          <div class="offer-footer">
+            <a href="#">Отправиться ➞</a>
+          </div>
+        </li>
+        <li class="offers-item">
+          <h3>Надоел английский?</h3>
+          <div class="offer-content">
+            <p class="offers-item-text">С нами можно выучить и другие языки</p>
+          </div>
+          <div class="offer-footer">
+            <a href="#">Открыть список ➞</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="media">
+      <h2 class="visually-hidden">Просмотр видео уроков</h2>
+      <video class="lesson-video" poster="/images/main/London-2.png"
+        width="540" height="300" controls preload="metadata">
+        <source src="/video/English - London sightseeing (A1-A2 - with subtitles).mp4" type="video/mp4">
+        <source src="/video/English - London sightseeing (A1-A2 - with subtitles).mp4" type="video/webm">
+        <source src="/video/English - London sightseeing (A1-A2 - with subtitles).mp4" type="video/ogg">
+      </video>
+      <div class="video-play-list-wrapper">
+        <h3>Английские песни</h3>
+        <div class="play-list">
+            <div class="play-item">
+                <h4>OneRepublic -</h4>
+                <p>Counting stars</p>
+              <audio src="/audio/OneRepublic - Counting Stars.mp3" controls preload="metadata"></audio>
+            </div>
+            <div class="play-item">
+              <h4>Green Day -</h4>
+              <p>21 Guns</p>
+            <audio src="/audio/Green Day - 21 Guns.mp3" controls preload="metadata"></audio>
+          </div>
+          <div class="play-item">
+            <h4>Pharrell Williams -</h4>
+            <p>Happy</p>
+          <audio src="/audio/Pharrell Williams - Happy.mp3" controls preload="metadata"></audio>
+        </div>
+        <div class="play-item">
+          <h4>Adele -</h4>
+          <p>Hello</p>
+        <audio src="/audio/Adele - Hello.mp3" controls preload="metadata"></audio>
+        </div>
+        </div>
+        </div>
+    </section>
+
+
+    <section class="contacts">
+      <h2>Контакты</h2>
+      <p class="contact-list">Lewisham Heights, 155 Honor Oak Rd, London SE23 3RW, Великобритания</p>
+      <a href="https://yandex.ru/maps/?um=constructor%3Aaf988d9280abd9d28c6c00532c6b7ae0ce28edb246a135daa308f1af69c3dc07&amp;source=constructorStatic" target="_blank"><img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3Aaf988d9280abd9d28c6c00532c6b7ae0ce28edb246a135daa308f1af69c3dc07&amp;width=300&amp;height=435&amp;lang=ru_RU" alt="" style="border: 0;" /></a>
+      <h2 class="contact-list">Режим работы</h2>
+      <ul >
+        <li >Понедельник: 9:00 - 19:30</li>
+        <li>Вторник: 9:00 - 18:00</li>
+        <li>Среда: 9:00 - 18:00</li>
+        <li>Четверг: 9:00 - 18:00</li>
+        <li>Пятница: 9:00 - 17:00</li>
+        <li>Суббота, Воскресенье - выходной</li>
+      </ul>
+
+    </section>
+  </main>
+
+
+  <footer class="page-footer">
+    <p class="copyright"> 2022</p>
+    <a class="page-footer-logo" href="#"><b>Dolphin school</b>, языковая школа</a>
+    <p class="copyright-details"> <a href="https://vk.com/id161066998" target="_blank">Сайт создан Иваном Поддубным</a>
+    </p>
+  </footer>
+
+</body>
+
+</html>
