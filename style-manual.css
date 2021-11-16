@@ -1,0 +1,25 @@
+.page-menu-link-cab-manual::before {
+    background-image: url("/images/manual/menu.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  
+  .page-menu-link-book-manual::before {
+    background-image: url("/images/manual/book.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .page-menu-link-home-manual::before {
+    background-image: url("/images/manual/home.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .page-menu-link-exam-manual::before {
+    background-image: url("/images/manual/homework.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
