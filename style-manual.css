@@ -2,24 +2,66 @@
     background-image: url("/images/manual/menu.png");
     background-repeat: no-repeat;
     background-position: center;
-  }
-  
-  
-  .page-menu-link-book-manual::before {
+}
+
+.page-menu-link-book-manual::before {
     background-image: url("/images/manual/book.png");
     background-repeat: no-repeat;
     background-position: center;
-  }
-  
-  .page-menu-link-home-manual::before {
-    background-image: url("/images/manual/home.png");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  
-  .page-menu-link-exam-manual::before {
-    background-image: url("/images/manual/homework.png");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+}
 
+.page-main-manual {
+    grid-gap: 20px;
+    display: grid;
+    grid-area: main;
+    grid-template-rows: 100px auto;
+    /* grid-template-columns: 100px auto; */
+    padding: 30px;
+    grid-template-areas: "title" "cards";
+    background-color: #f1f3fe;
+}
+
+.cards-list {
+    grid-area: cards;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.book-card:nth-child(3) {
+    margin-right: 0;
+}
+
+.book-card {
+    width: 225px;
+    margin-right: 10px;
+    padding: 15px;
+}
+
+.image-card {
+    order: -1;
+    margin-bottom: 15px;
+}
+
+.title-card {
+    order: 0;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: #576BCC;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.description-card {
+    margin-top: 0;
+}
+
+.title-card::after {
+    content: "";
+    display: block;
+    width: 255px;
+    height: 3px;
+    background-color: #576BCC;
+    margin: 15px auto;
+}
