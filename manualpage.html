@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css" type="text/css">
-    <link rel="stylesheet" href="/style-manual.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" href="/style-manual.css"> -->
     <!-- <link href="https://assets.htmlacademy.ru/content/skills/6/case-01/outline.css" rel="stylesheet"> -->
     <title>Учебные пособия</title>
 
@@ -16,11 +16,11 @@
 <body class="page container">
     <nav class="page-menu">
         <a class="logo" href="#">
-            <img class="logo-img" src="/images/main/logotip.jpg" alt="Dolphin, языковая школа">
+            <img class="logo-img" src="assets/images/main/logotip.jpg" alt="Dolphin, языковая школа">
         </a>
         <ul class="page-menu-list">
             <li class="page-menu-item ">
-                <a class="page-menu-link page-menu-link-cab-manual" href="/index.html">Главная</a>
+                <a class="page-menu-link page-menu-link-cab-manual" href="index.html">Главная</a>
             </li>
             <li class="page-menu-item page-menu-item-active">
                 <a class="page-menu-link page-menu-link-book-manual">Методичка</a>
@@ -29,39 +29,34 @@
                 <a class="page-menu-link page-menu-link-home" href="#">Домашняя работа</a>
             </li>
             <li class="page-menu-item">
-                <a class="page-menu-link page-menu-link-exam" href="#">Тесты</a>
+                <a class="page-menu-link page-menu-link-exam" href="testpage.html">Тесты</a>
             </li>
         </ul>
-
     </nav>
     <header class="page-header">
-
-
         <button class="english-btn" type="button"><span>ENG</span></button>
     </header>
     <main class="page-main-manual">
-        <h1>Методичка</h1>
-        <div class="card-list">
-            <div class="book-card">
-                <img class="image-card" src="/images/manual/englishbook1.jpg" alt="книга для изучения английского">
-                <h2 class="title-card">Speakout</h2>
-                <p class="description-card">Подойдет как для начинающих, так и для тех кто уже изучал язык ранее
-                </p>
-            </div>
-
-
-            <div class="book-card">
-                <img class="image-card" src="/images/manual/englishbook2.jpg" alt="книга для изучения английского">
-                <h2 class="title-card">Advanced Grammar in Use</h2>
-                <p class="description-card">Для любителей старой доброй и проверенной грамматики. Тысяча упражнений для грамотного письма</p>
-            </div>
-
-
-            <div class="book-card">
-                <img class="image-card" src="/images/manual/englishbook3.jpg" alt="книга для изучения английского">
-                <h2 class="title-card">Upstream</h2>
-                <p class="description-card">Особо понравится молодежи и тем кто хочет прокачать разговорные навыки </p>
-            </div>
+        <h1 class="title-manual">Методичка</h1>
+        <div class="card-grid">
+            <a class="card" href="#">
+                <div class="card__background" style="background-image: url(assets/images/manual/englishbook1.jpg)"></div>
+                <div class="card__content">
+                    <h3 class="card__category">Учебное пособие</h3>
+                </div>
+            </a>
+            <a class="card" href="#">
+                <div class="card__background" style="background-image: url(assets/images/manual/englishbook2.jpg)"></div>
+                <div class="card__content">
+                    <h3 class="card__category">Самоучитель</h3>
+                </div>
+            </a>
+            <a class="card" href="#">
+                <div class="card__background" style="background-image: url(assets/images/manual/englishbook3.jpg)"></div>
+                <div class="card__content">
+                    <h3 class="card__category">Учебник старшей школы</h3>
+                </div>
+            </a>
         </div>
     </main>
     <footer class="page-footer">

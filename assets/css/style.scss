@@ -104,25 +104,25 @@ body {
 }
 
 .page-menu-link-cab::before {
-    background-image: url("/images/main/menu.png");
+    background-image: url("/assets/images/main/menu.png");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .page-menu-link-book::before {
-    background-image: url("/images/main/book.png");
+    background-image: url("/assets/images/main/book.png");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .page-menu-link-home::before {
-    background-image: url("/images/main/home.png");
+    background-image: url("/assets/images/main/home.png");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .page-menu-link-exam::before {
-    background-image: url("/images/main/homework.png");
+    background-image: url("/assets/images/main/homework.png");
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -134,7 +134,7 @@ body {
 
 .page-menu-link:hover {
     font-weight: 500;
-    color: #576bcc;
+    color: #002aff;
 }
 
 
@@ -445,4 +445,203 @@ body {
 .copyright-details a {
     color: #aaaaaa;
     text-decoration: none;
+}
+
+// Страница учебника (не работает див с карточками)
+.page-menu-link-cab-manual::before {
+    background-image: url("/assets/images/manual/menu.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.page-menu-link-book-manual::before {
+    background-image: url("/assets/images/manual/book.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.page-main-manual {
+    background-color: #f1f3fe;
+}
+
+.title-manual {
+    height: 50px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #576BCC;
+    text-align: center;
+    border-bottom: 2px solid #576BCC;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    max-width: 300px;
+    width: 100%;
+}
+
+.card {
+    list-style: none;
+    position: relative;
+}
+
+.card:before {
+    content: '';
+    display: block;
+    padding-bottom: 150%;
+    width: 100%;
+}
+
+.card__background {
+    background-size: cover;
+    background-position: center;
+    border-radius: 24px;
+    bottom: 0;
+    filter: brightness(0.75) saturate(1.2) contrast(0.85);
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform-origin: center;
+    trsnsform: scale(1) translateZ(0);
+    transition: filter 200ms linear, transform 200ms linear;
+}
+
+.card:hover .card__background {
+    transform: scale(1.05) translateZ(0);
+}
+
+.card-grid:hover>.card:not(:hover) .card__background {
+    filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+}
+
+.card__content {
+    left: 0;
+    padding: 24px;
+    position: absolute;
+    top: 0;
+}
+
+.card__category {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 25px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    line-height: 25px;
+}
+
+// .page-main-manual {
+//     display: grid;
+//     background-color: #f1f3fe;
+//     grid-template-rows: 50px, 200px;
+//     gap: 20px;
+// }
+// .cards-list {
+//     display: grid;
+//     grid-template-columns: 200px 200px 200px;
+//     gap: 20px;
+//     margin: 0 auto;
+//     .book-card:nth-child(3) {
+//         margin-right: 0;
+//     }
+//     .book-card {
+//         display: block;
+//         width: 230px;
+//         margin-right: 10px;
+//         padding: 15px;
+//     }
+//     .image-card {
+//         margin-bottom: 15px;
+//     }
+//     .title-card {
+//         text-align: center;
+//         font-size: 35px;
+//         font-weight: bold;
+//         color: #576BCC;
+//         margin-top: 10px;
+//         margin-bottom: 5px;
+//     }
+//     .description-card {
+//         margin-top: 0;
+//     }
+//     .title-card::after {
+//         content: "";
+//         display: block;
+//         width: 255px;
+//         height: 3px;
+//         background-color: #576BCC;
+//         margin: 15px auto;
+//     }
+// }
+// Страница с тестами
+.page-menu-link-exam-active::before {
+    background-image: url("/assets/images/tests/testicon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.page-main-tests {
+    background-color: #f1f3fe;
+    .title-tetst {
+        height: 50px;
+        font-size: 50px;
+        font-weight: bold;
+        color: #576BCC;
+        text-align: center;
+        border-bottom: 2px solid #576BCC;
+    }
+    .testcards-block {
+        display: flex;
+        flex-direction: column;
+        .test-card {
+            margin-left: 10%;
+            margin-bottom: 4%;
+            width: 85%;
+            height: 300px;
+            padding: 32px 60px;
+            overflow: hidden;
+            box-sizing: border-box;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 28px;
+        }
+        .test-card-img {
+            position: absolute;
+            width: 60%;
+            height: 280px;
+        }
+        .blue {
+            opacity: 0.4;
+        }
+        .description-test {
+            padding-left: 15px;
+            .test-card-headline {
+                position: relative;
+                margin-bottom: 10px;
+                font-weight: 900;
+                font-size: 28px;
+                line-height: 48px;
+                color: #ffffff;
+            }
+            .test-card-text {
+                position: relative;
+                margin: 0 0 30px 0;
+                max-width: 470px;
+                color: #ffffff;
+            }
+            .go-test {
+                position: relative;
+                padding: 10px 20px;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 22px;
+                color: #ffffff;
+                text-decoration: none;
+                background-color: #ff8f0b;
+                border-radius: 4px;
+            }
+        }
+    }
 }
