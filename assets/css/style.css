@@ -519,11 +519,13 @@ body {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[1];
-      grid-template-columns: repeat(1, 1fr);
-  grid-column-gap: 25px;
-  grid-row-gap: 25px;
-  max-width: 300px;
-  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card {
