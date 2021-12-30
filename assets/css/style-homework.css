@@ -1,0 +1,191 @@
+.page-menu-link-cab-manual::before {
+  background-image: url("/assets/images/manual/menu.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.page-menu-link-homework-active::before {
+  background-image: url("/assets/images/homework/homework.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.page-main-homework {
+  background-color: #f1f3fe;
+}
+
+.page-main-homework .tittle-homework {
+  margin-top: 35px;
+  margin-left: 20px;
+  margin-bottom: 25px;
+}
+
+.page-main-homework .homework-cards {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 200px;
+  background-color: #576BCC;
+}
+
+.page-main-homework .homework-description {
+  position: relative;
+  display: none;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 110px;
+  width: 90%;
+  height: 450px;
+  background-color: #FFFCFC;
+}
+
+.page-main-homework .homework-description .hide-work {
+  margin-top: auto;
+  margin-right: auto;
+  position: absolute;
+  width: 10%;
+  height: 50px;
+  bottom: 10%;
+  right: 5%;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 22px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #576BCC;
+  border: none;
+  border-radius: 5px;
+}
+
+.page-main-homework #wrapper {
+  width: 100%;
+  max-width: 1500px;
+  position: relative;
+}
+
+.page-main-homework #carousel {
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.page-main-homework #carousel::-webkit-scrollbar {
+  height: 0;
+}
+
+.page-main-homework #prev,
+.page-main-homework #next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background: #dfdddd;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  outline: 0;
+  cursor: pointer;
+  position: absolute;
+}
+
+.page-main-homework #prev {
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  display: none;
+}
+
+.page-main-homework #next {
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.page-main-homework #content {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 16px;
+  grid-auto-flow: column;
+  margin: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.page-main-homework .item {
+  width: 300px;
+  height: 180px;
+  background: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 10px;
+}
+
+.page-main-homework .item h2 {
+  margin-top: 10px;
+  color: #4a4e66;
+  font-size: 18px;
+  text-align: center;
+}
+
+.page-main-homework .item .topic-name {
+  font-size: 20px;
+  color: #3C425F;
+  text-align: center;
+  font-weight: 400;
+  height: 10px;
+}
+
+.page-main-homework .item .deadline {
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 20px;
+  gap: 5px;
+}
+
+.page-main-homework .item .open-work {
+  font-size: 15px;
+  text-decoration: none;
+  text-align: right;
+  margin-right: 20px;
+  height: 10%;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style-homework.css.map */

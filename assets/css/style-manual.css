@@ -62,7 +62,8 @@
   top: 0;
   -webkit-transform-origin: center;
           transform-origin: center;
-  trsnsform: scale(1) translateZ(0);
+  -webkit-transform: scale(1) translateZ(0);
+          transform: scale(1) translateZ(0);
   -webkit-transition: -webkit-filter 200ms linear, -webkit-transform 200ms linear;
   transition: -webkit-filter 200ms linear, -webkit-transform 200ms linear;
   transition: filter 200ms linear, transform 200ms linear;
@@ -95,7 +96,7 @@
 }
 
 .modal {
-  font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
 }
 
 .modal__overlay {
@@ -193,10 +194,10 @@
   -webkit-transition: -webkit-transform .25s ease-out;
   transition: transform .25s ease-out;
   transition: transform .25s ease-out, -webkit-transform .25s ease-out;
-  transition: transform .25s ease-out,-webkit-transform .25s ease-out;
 }
 
-.modal__btn:focus, .modal__btn:hover {
+.modal__btn:focus,
+.modal__btn:hover {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
 }

@@ -453,17 +453,14 @@ body {
 //     background-repeat: no-repeat;
 //     background-position: center;
 // }
-
 // .page-menu-link-book-manual::before {
 //     background-image: url("/assets/images/manual/book.png");
 //     background-repeat: no-repeat;
 //     background-position: center;
 // }
-
 // .page-main-manual {
 //     background-color: #f1f3fe;
 // }
-
 // .title-manual {
 //     height: 50px;
 //     font-size: 50px;
@@ -472,7 +469,6 @@ body {
 //     text-align: center;
 //     border-bottom: 2px solid #576BCC;
 // }
-
 // .card-grid {
 //   display: grid;  
 //   grid-template-columns: repeat(3, 1fr);
@@ -484,19 +480,16 @@ body {
 //   margin-right: auto;
 //   margin-bottom: 150px;
 // }
-
 // .card {
 //     list-style: none;
 //     position: relative;
 // }
-
 // .card:before {
 //     content: '';
 //     display: block;
 //     padding-bottom: 150%;
 //     width: 100%;
 // }
-
 // .card__background {
 //     background-size: cover;
 //     background-position: center;
@@ -511,22 +504,18 @@ body {
 //     trsnsform: scale(1) translateZ(0);
 //     transition: filter 200ms linear, transform 200ms linear;
 // }
-
 // .card:hover .card__background {
 //     transform: scale(1.05) translateZ(0);
 // }
-
 // .card-grid:hover>.card:not(:hover) .card__background {
 //     filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
 // }
-
 // .card__content {
 //     left: 0;
 //     padding: 24px;
 //     position: absolute;
 //     top: 0;
 // }
-
 // .card__category {
 //     color: rgba(255, 255, 255, 0.6);
 //     font-size: 25px;
@@ -534,7 +523,6 @@ body {
 //     text-transform: uppercase;
 //     line-height: 25px;
 // }
-
 // .page-main-manual {
 //     display: grid;
 //     background-color: #f1f3fe;
@@ -578,73 +566,3 @@ body {
 //         margin: 15px auto;
 //     }
 // }
-// Страница с тестами
-.page-menu-link-exam-active::before {
-    background-image: url("/assets/images/tests/testicon.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.page-main-tests {
-    background-color: #f1f3fe;
-    .title-tetst {
-        height: 50px;
-        font-size: 50px;
-        font-weight: bold;
-        color: #576BCC;
-        text-align: center;
-        border-bottom: 2px solid #576BCC;
-    }
-    .testcards-block {
-        display: flex;
-        flex-direction: column;
-        .test-card {
-            margin-left: 10%;
-            margin-bottom: 4%;
-            width: 85%;
-            height: 300px;
-            padding: 32px 60px;
-            overflow: hidden;
-            box-sizing: border-box;
-            font-weight: 300;
-            font-size: 18px;
-            line-height: 28px;
-        }
-        .test-card-img {
-            position: absolute;
-            width: 60%;
-            height: 280px;
-        }
-        .blue {
-            opacity: 0.4;
-        }
-        .description-test {
-            padding-left: 15px;
-            .test-card-headline {
-                position: relative;
-                margin-bottom: 10px;
-                font-weight: 900;
-                font-size: 28px;
-                line-height: 48px;
-                color: #ffffff;
-            }
-            .test-card-text {
-                position: relative;
-                margin: 0 0 30px 0;
-                max-width: 470px;
-                color: #ffffff;
-            }
-            .go-test {
-                position: relative;
-                padding: 10px 20px;
-                font-weight: 500;
-                font-size: 18px;
-                line-height: 22px;
-                color: #ffffff;
-                text-decoration: none;
-                background-color: #ff8f0b;
-                border-radius: 4px;
-            }
-        }
-    }
-}
