@@ -48,7 +48,7 @@
   margin-right: auto;
   margin-bottom: 110px;
   width: 90%;
-  height: 450px;
+  height: auto;
   background-color: #FFFCFC;
 }
 
@@ -58,7 +58,7 @@
   position: absolute;
   width: 10%;
   height: 50px;
-  bottom: 10%;
+  bottom: 5%;
   right: 5%;
   font-weight: 500;
   font-size: 20px;
@@ -68,6 +68,21 @@
   background-color: #576BCC;
   border: none;
   border-radius: 5px;
+}
+
+.page-main-homework .homework-description .topic-name-card {
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #576BCC;
+}
+
+.page-main-homework .homework-description .DescriptionHomeWork {
+  padding-bottom: 10%;
+  line-height: 1.5;
+  font-size: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .page-main-homework #wrapper {

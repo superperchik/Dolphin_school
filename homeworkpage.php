@@ -9,6 +9,13 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/style-homework.css">
     <!-- <link href="https://assets.htmlacademy.ru/content/skills/6/case-01/outline.css" rel="stylesheet"> -->
+   
+   <?php
+	require_once "assets/functions/dataconnection.php";
+    $works = getWork(7);
+     ?> 
+    
+      
     <title>Домашняя работа</title>
 
 </head>
@@ -43,18 +50,36 @@
             <div id="wrapper">
                 <div id="carousel">
                     <div id="content">
+                    
 
-                        <div class="item">
-                            <h2 id="TittleHomeworkItem">Заголовок</h2>
-                            <p class="topic-name" id="TopicHomeworkItem">Название темы</p>
-                            <div class="deadline">
-                                <P>Срок сдачи:</P>
-                                <p id="DateHomeworkItem">XX месяц</p>
-                            </div>
-                            <button class="open-work" id="openwork">Открыть</button>
-
+                    <?php
+                    for ($i = 0; $i<count($works);$i++){
+                    ?>
+                    
+                     <div class="item">
+                        <h2 id="TittleHomeworkItem"> <?php echo $works[$i]["Tittle"]; ?></h2>
+                        <p class="topic-name" id="TopicHomeworkItem"><?php echo $works[$i]["Topic"]; ?></p>
+                        <div class="deadline">
+                            <P>Срок сдачи:</P>
+                            <p id="DateHomeworkItem"><?php echo $works[$i]["Deadline"]; ?></p>
                         </div>
-                        <div class="item">
+                        <button class="open-work" id="openwork" onclick="(document.getElementById('example_1').style.display='block')">Открыть</button>
+
+                    </div>
+  
+                    <?php
+                        
+                    }
+                    ?>
+                    
+                   
+                        
+                       
+                       
+                      
+                         
+
+                        <!-- <div class="item">
                             <h2>Заголовок</h2>
                             <p class="topic-name">Название темы</p>
                             <div class="deadline">
@@ -89,9 +114,9 @@
                                 <p>XX месяц</p>
                             </div>
                             <button class="open-work">Открыть</button>
-                        </div>
-
-
+                        </div> -->
+                      
+                      
                     </div>
                 </div>
                 <button id="prev">
@@ -118,29 +143,15 @@
                 </button>
             </div>
         </div>
+
         <div class="homework-description" id="example_1">
             <h2 class="topic-name-card" id="TopicHomeworkItem">Название темы</h2>
 
             <div class="DescriptionHomeWork" id="DescriptionHomeWork">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium tortor non lectus molestie, vel ultrices lacus tincidunt. Suspendisse potenti. Sed mattis magna nec turpis viverra consequat. Duis sagittis quis nunc eget fringilla.
-                    Mauris viverra tellus sit amet tellus faucibus convallis. Ut gravida mattis placerat. Integer consectetur auctor gravida. Nulla nulla velit, aliquet ac scelerisque et, varius at lacus. Maecenas mauris lectus, hendrerit interdum sem
-                    sed, pharetra rhoncus sapien. Aenean at faucibus ipsum, in suscipit est. Maecenas fringilla neque sit amet semper dapibus. Integer rhoncus eu leo nec interdum. Phasellus consequat nisi at erat interdum rhoncus. Nunc sed massa in sapien
-                    tincidunt ullamcorper. Curabitur pretium ligula vitae lorem laoreet suscipit. Donec at faucibus mi, ac sagittis augue.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium tortor non lectus molestie, vel ultrices lacus tincidunt. Suspendisse potenti. Sed mattis magna nec turpis viverra consequat. Duis sagittis quis nunc eget fringilla.
-                    Mauris viverra tellus sit amet tellus faucibus convallis. Ut gravida mattis placerat. Integer consectetur auctor gravida. Nulla nulla velit, aliquet ac scelerisque et, varius at lacus. Maecenas mauris lectus, hendrerit interdum sem
-                    sed, pharetra rhoncus sapien. Aenean at faucibus ipsum, in suscipit est. Maecenas fringilla neque sit amet semper dapibus. Integer rhoncus eu leo nec interdum. Phasellus consequat nisi at erat interdum rhoncus. Nunc sed massa in sapien
-                    tincidunt ullamcorper. Curabitur pretium ligula vitae lorem laoreet suscipit. Donec at faucibus mi, ac sagittis augue.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium tortor non lectus molestie, vel ultrices lacus tincidunt. Suspendisse potenti. Sed mattis magna nec turpis viverra consequat. Duis sagittis quis nunc eget fringilla.
-                    Mauris viverra tellus sit amet tellus faucibus convallis. Ut gravida mattis placerat. Integer consectetur auctor gravida. Nulla nulla velit, aliquet ac scelerisque et, varius at lacus. Maecenas mauris lectus, hendrerit interdum sem
-                    sed, pharetra rhoncus sapien. Aenean at faucibus ipsum, in suscipit est. Maecenas fringilla neque sit amet semper dapibus. Integer rhoncus eu leo nec interdum. Phasellus consequat nisi at erat interdum rhoncus. Nunc sed massa in sapien
-                    tincidunt ullamcorper. Curabitur pretium ligula vitae lorem laoreet suscipit. Donec at faucibus mi, ac sagittis augue.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium tortor non lectus molestie, vel ultrices lacus tincidunt. Suspendisse potenti. Sed mattis magna nec turpis viverra consequat. Duis sagittis quis nunc eget fringilla.
-                    Mauris viverra tellus sit amet tellus faucibus convallis. Ut gravida mattis placerat. Integer consectetur auctor gravida. Nulla nulla velit, aliquet ac scelerisque et, varius at lacus. Maecenas mauris lectus, hendrerit interdum sem
-                    sed, pharetra rhoncus sapien. Aenean at faucibus ipsum, in suscipit est. Maecenas fringilla neque sit amet semper dapibus. Integer rhoncus eu leo nec interdum. Phasellus consequat nisi at erat interdum rhoncus. Nunc sed massa in sapien
-                    tincidunt ullamcorper. Curabitur pretium ligula vitae lorem laoreet suscipit. Donec at faucibus mi, ac sagittis augue.</p>
+            <p>  <?php echo($works[7]["Description"]); ?></p>
             </div>
 
-            <button class="hide-work" id="hidework">Скрыть</button>
+            <button class="hide-work" id="hidework" onclick="(document.getElementById('example_1').style.display='none')">Скрыть</button>
         </div>
 
 
@@ -153,4 +164,5 @@
     </footer>
     <script src="assets/js/carousel.js"></script>
     <script src="assets/js/show-hide-homework.js"></script>
+    
 </body>

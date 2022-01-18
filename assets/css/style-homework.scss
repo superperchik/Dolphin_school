@@ -36,7 +36,7 @@
         margin-right: auto;
         margin-bottom: 110px;
         width: 90%;
-        height: 450px;
+        height: auto;
         background-color: #FFFCFC;
         .hide-work {
             margin-top: auto;
@@ -44,7 +44,7 @@
             position: absolute;
             width: 10%;
             height: 50px;
-            bottom: 10%;
+            bottom: 5%;
             right: 5%;
             // position: relative;
             // padding: 10px 20px;
@@ -56,6 +56,19 @@
             background-color: #576BCC;
             border: none;
             border-radius: 5px;
+        }
+        .topic-name-card {
+            padding-top: 20px;
+            padding-left: 50px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #576BCC;
+        }
+        .DescriptionHomeWork {
+            padding-bottom: 10%;
+            line-height: 1.5;
+            font-size: 25px;
+            padding-left: 50px;
+            padding-right: 50px;
         }
     }
     // карусель
