@@ -7,13 +7,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Линии  -->
     <!-- <link href="https://assets.htmlacademy.ru/content/skills/6/case-01/outline.css" rel="stylesheet"> -->
     <title>Dolphin school, языковая школа</title>
 
 </head>
 
-<body class="page container">
-    <nav class="page-menu">
+<body>
+    <div class="wrapper">
+        <header class="page-header">
+            <div class="part1">
+                <a class="logo" href="#">
+                    <img class="logo-img" src="assets/images/main/logotip.jpg" alt="Dolphin, языковая школа">
+                </a>
+            </div>
+            <div class="part2">
+                <h1>Школа Англиского языка Dolphin School</h1>
+            </div>
+            <div class="part3">
+                <a class="english-chg"><span>ENG</span></a>
+            </div>
+
+        </header>
+
+        <nav>
+            <ul class="sidenav">
+                <li class="page-menu-item page-menu-item-active">
+                    <a class="page-menu-link page-menu-link-cab">Главная</a>
+                </li>
+                <li class="page-menu-item">
+                    <a class="page-menu-link page-menu-link-book" href="manualpage.html">Методичка</a>
+                </li>
+                <li class="page-menu-item">
+                    <a class="page-menu-link page-menu-link-home" href="homeworkpage.php">Домашняя работа</a>
+                </li>
+                <li class="page-menu-item">
+                    <a class="page-menu-link page-menu-link-exam" href="testpage.html">Тесты</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <!-- <h2>Responsive Sidenav Example</h2>
+            <p>This example use media queries to transform the sidenav to a top navigation bar when the screen size is 900px or less.</p>
+            <p>We have also added a media query for screens that are 400px or less, which will vertically stack and center the navigation links.</p>
+            <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+            <h3>Resize the browser window to see the effect.</h3> -->
+
+            <section class="slider">
+
+                <!-- <img class="slider-img" src="assets/images/main/London.jpg" alt="Бигбен на фоне голубого облачного неба"> -->
+                <!-- <img class="slider-img blue" src="assets/images/main/blue-2.jpg" height="400px"> -->
+
+
+                <p class="slider-headline">«Бифитер», «Кокни», «Даблдекер»...</p>
+                <p class="slider-text">Пройдите тест и узнайте насколько хорошо вы знакомы с жизнью в Лондоне</p>
+                <a href="quizpage.html">Пройти тест ➞</a>
+
+
+
+            </section>
+
+            <section class="offers">
+                <h2 class="visually-hidden">Интересные предложения</h2>
+                <ul class="offers-list">
+                    <li class="offers-item">
+                        <h3>Английский завтрак</h3>
+                        <div class="offer-content">
+                            <p class="offers-item-text">Разговорный клуб</p>
+                            <p class="offers-item-time">10:00 — 11:00 (ПН—ПТ)</p>
+                        </div>
+                        <div class="offer-footer">
+                            <a href="#">Записаться ➞</a>
+                        </div>
+                    </li>
+                    <li class="offers-item">
+                        <h3>Лето в Лондоне</h3>
+                        <div class="offer-content">
+                            <p class="offers-item-text">Месяц экскурсий и практики</p>
+                            <p class="offers-item-time">10 июня — 3 июля</p>
+                        </div>
+                        <div class="offer-footer">
+                            <a href="#">Отправиться ➞</a>
+                        </div>
+                    </li>
+                    <li class="offers-item">
+                        <h3>Надоел английский?</h3>
+                        <div class="offer-content">
+                            <p class="offers-item-text">С нами можно выучить и другие языки</p>
+                        </div>
+                        <div class="offer-footer">
+                            <a href="#">Открыть список ➞</a>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="contacts">
+                <h2>Контакты</h2>
+                <p class="contact-list">Lewisham Heights, 155 Honor Oak Rd, London SE23 3RW, Великобритания</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2486.8274443392365!2d-0.05848138387673692!3d51.44296277962453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487603cfb9c30ffb%3A0x10e0b8cd65a1d036!2zTGV3aXNoYW0gSGVpZ2h0cywgMTU1IEhvbm9yIE9hayBSZCwgTG9uZG9uIFNFMjMgM1JXLCDQktC10LvQuNC60L7QsdGA0LjRgtCw0L3QuNGP!5e0!3m2!1sru!2sru!4v1642935438784!5m2!1sru!2sru"
+                    width="90%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <h2 class="contact-list">Режим работы</h2>
+                <ul>
+                    <li>Понедельник: 9:00 - 19:30</li>
+                    <li>Вторник: 9:00 - 18:00</li>
+                    <li>Среда: 9:00 - 18:00</li>
+                    <li>Четверг: 9:00 - 18:00</li>
+                    <li>Пятница: 9:00 - 17:00</li>
+                    <li>Суббота, Воскресенье - выходной</li>
+                </ul>
+            </section>
+            <!-- <section class="media">
+                <h2 class="visually-hidden">Просмотр видео уроков</h2>
+                <video class="lesson-video" poster="assets/images/main/London-2.png" width="540" height="300" controls preload="metadata">
+            <source src="assets/video/English - London sightseeing (A1-A2 - with subtitles).mp4" type="video/mp4">
+            <source src="assets/video/English - London sightseeing (A1-A2 - with subtitles).mp4" type="video/webm">
+            <source src="assets/video/English - London sightseeing (A1-A2 - with subtitles).mp4" type="video/ogg">
+          </video>
+                <div class="video-play-list-wrapper">
+                    <h3>Английские песни</h3>
+                    <div class="play-list">
+                        <div class="play-item">
+                            <h4>OneRepublic -</h4>
+                            <p>Counting stars</p>
+                            <audio src="assets/audio/OneRepublic - Counting Stars.mp3" controls preload="metadata"></audio>
+                        </div>
+                        <div class="play-item">
+                            <h4>Green Day -</h4>
+                            <p>21 Guns</p>
+                            <audio src="assets/audio/Green Day - 21 Guns.mp3" controls preload="metadata"></audio>
+                        </div>
+                        <div class="play-item">
+                            <h4>Pharrell Williams -</h4>
+                            <p>Happy</p>
+                            <audio src="assets/audio/Pharrell Williams - Happy.mp3" controls preload="metadata"></audio>
+                        </div>
+                        <div class="play-item">
+                            <h4>Adele -</h4>
+                            <p>Hello</p>
+                            <audio src="assets/audio/Adele - Hello.mp3" controls preload="metadata"></audio>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+
+
+
+        </div>
+        <!-- class="page container flex-col"
+        
+        <nav class="page-menu">
         <a class="logo" href="#">
             <img class="logo-img" src="assets/images/main/logotip.jpg" alt="Dolphin, языковая школа">
         </a>
@@ -32,16 +177,17 @@
             </li>
         </ul>
 
-    </nav>
-    <header class="page-header">
+    </nav> -->
+        <!-- <header class="page-header">
 
 
         <button class="english-btn" type="button"><span>ENG</span></button>
-    </header>
+    </header> -->
 
-    <main class="page-main">
+        <!-- <main class="page-main">
         <h1 class="visually-hidden">Главная страница сайта языковой школы Let’s Speak</h1>
-        <div class="slider">
+       
+        <section class="slider">
             <img class="slider-img" src="assets/images/main/London.jpg" alt="Бигбен на фоне голубого облачного неба" width="1200" height="300">
             <img class="slider-img blue" src="assets/images/main/blue-2.jpg" width="1200" height="300">
 
@@ -49,7 +195,11 @@
             <p class="slider-text">Пройдите тест и узнайте насколько хорошо вы знакомы с жизнью в Лондоне</p>
             <a href="quizpage.html">Пройти тест ➞</a>
 
-        </div>
+        </section>
+
+
+
+      
         <section class="offers">
             <h2 class="visually-hidden">Интересные предложения</h2>
             <ul class="offers-list">
@@ -84,6 +234,8 @@
                 </li>
             </ul>
         </section>
+
+   
         <section class="media">
             <h2 class="visually-hidden">Просмотр видео уроков</h2>
             <video class="lesson-video" poster="assets/images/main/London-2.png" width="540" height="300" controls preload="metadata">
@@ -118,13 +270,12 @@
             </div>
         </section>
 
-
+      
         <section class="contacts">
             <h2>Контакты</h2>
             <p class="contact-list">Lewisham Heights, 155 Honor Oak Rd, London SE23 3RW, Великобритания</p>
-            <a href="https://yandex.ru/maps/?um=constructor%3Aaf988d9280abd9d28c6c00532c6b7ae0ce28edb246a135daa308f1af69c3dc07&amp;source=constructorStatic" target="_blank">
-                <img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3Aaf988d9280abd9d28c6c00532c6b7ae0ce28edb246a135daa308f1af69c3dc07&amp;width=300&amp;height=435&amp;lang=ru_RU" alt="" />
-            </a>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2486.8274443392365!2d-0.05848138387673692!3d51.44296277962453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487603cfb9c30ffb%3A0x10e0b8cd65a1d036!2zTGV3aXNoYW0gSGVpZ2h0cywgMTU1IEhvbm9yIE9hayBSZCwgTG9uZG9uIFNFMjMgM1JXLCDQktC10LvQuNC60L7QsdGA0LjRgtCw0L3QuNGP!5e0!3m2!1sru!2sru!4v1642935438784!5m2!1sru!2sru"
+                width="90%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             <h2 class="contact-list">Режим работы</h2>
             <ul>
                 <li>Понедельник: 9:00 - 19:30</li>
@@ -134,18 +285,20 @@
                 <li>Пятница: 9:00 - 17:00</li>
                 <li>Суббота, Воскресенье - выходной</li>
             </ul>
-
         </section>
-    </main>
 
 
-    <footer class="page-footer">
-        <p class="copyright"> 2022</p>
-        <a class="page-footer-logo" href="#"><b>Dolphin school</b>, языковая школа</a>
-        <p class="copyright-details"> <a href="https://vk.com/id161066998" target="_blank">Сайт создан Иваном Поддубным</a>
-        </p>
-    </footer>
+    </main> -->
 
+
+        <footer class="page-footer">
+            <p class="copyright"> 2022</p>
+            <a class="page-footer-logo" href="#"><b>Dolphin school</b>, языковая школа</a>
+            <p class="copyright-details"> <a href="https://vk.com/id161066998" target="_blank">Сайт создан Иваном Поддубным</a>
+                <p class="copyright-details eng-href-footer"> <a href="#" target="_blank">English version</a>
+                </p>
+        </footer>
+    </div>
 </body>
 
 </html>
