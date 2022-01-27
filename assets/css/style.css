@@ -182,25 +182,25 @@ ul.sidenav li a {
 }
 
 .page-menu-link-cab::before {
-  background-image: url("/assets/images/main/menu.png");
+  background-image: url("assets/images/main/menu.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .page-menu-link-book::before {
-  background-image: url("/assets/images/main/book.png");
+  background-image: url("assets/images/main/book.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .page-menu-link-home::before {
-  background-image: url("/assets/images/main/home.png");
+  background-image: url("assets/images/main/home.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .page-menu-link-exam::before {
-  background-image: url("/assets/images/main/homework.png");
+  background-image: url("assets/images/main/homework.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -323,7 +323,7 @@ div.content {
   font-weight: 300;
   font-size: 25px;
   line-height: 28px;
-  background: url(/assets/images/main/London.jpg) center/cover;
+  background: url(assets/images/main/London.jpg) center/cover;
   height: auto;
 }
 
