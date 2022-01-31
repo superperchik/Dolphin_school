@@ -159,25 +159,25 @@ ul.sidenav li a {
 }
 
 .page-menu-link-cab::before {
-    background-image: url("/assets/images/main/menu.png");
+    background-image: url("../images/main/menu.png");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .page-menu-link-book::before {
-    background-image: url("/assets/images/main/book.png");
+    background-image: url("../images/main/book.png");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .page-menu-link-home::before {
-    background-image: url("/assets/images/main/home.png");
+    background-image: url("../images/main/home.png");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .page-menu-link-exam::before {
-    background-image: url("/assets/images/main/homework.png");
+    background-image: url("../images/main/homework.png");
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -339,7 +339,7 @@ div.content {
     font-weight: 300;
     font-size: 25px;
     line-height: 28px;
-    background: url("/assets/images/main/London.jpg") center/cover;
+    background: url("../images/main/London.jpg") center/cover;
     height: auto;
     // position: relative;
     // width: 75%;
@@ -400,10 +400,11 @@ div.content {
 /* Раздел с видео и музыкой */
 
 .media {
+    margin-left: 15%;
     margin-top: 25px;
     // grid-area: video;
     display: flex;
-    width: 75%;
+    width: 65%;
     // grid-template-columns: 1fr 2fr;
     // grid-gap: 20px;
 }
@@ -473,9 +474,15 @@ div.content {
 /* Контакты */
 
 .contacts {
+    //
+    // position: fixed;
+    // top: 115px;
+    // left: 1250px;
+    //
     display: flex;
     flex-direction: column;
-    width: 25%;
+    //25%
+    width: 15%;
     margin-left: 15%;
     padding: 20px 0 20px 30px;
     background-color: #ffffff;
@@ -740,6 +747,32 @@ div.content {
         margin-left: 0px;
         margin-bottom: 15px;
     }
+    .media {
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-bottom: 15px;
+        .lesson-video {
+            width: auto;
+        }
+        .video-play-list-wrapper {
+            margin-top: 15px;
+            margin-left: 0;
+            width: auto;
+        }
+        // margin-left: 0;
+        // margin-top: 25px;
+        // flex-direction: column;
+        // justify-content: center;
+        // grid-area: video;
+        // display: flex;
+        // width: 100%;
+        // margin-bottom: 15px;
+        // grid-template-columns: 1fr 2fr;
+        // grid-gap: 20px;
+    }
 }
 
 // телефон
@@ -796,5 +829,36 @@ div.content {
             font-size: 18px;
             width: 45%;
         }
+    }
+    .media {
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-bottom: 15px;
+        .lesson-video {
+            width: 80%;
+            height: auto;
+        }
+        .video-play-list-wrapper {
+            margin-top: 15px;
+            margin-left: 0;
+            width: 80%;
+        }
+        // margin-left: 0;
+        // margin-top: 25px;
+        // flex-direction: column;
+        // justify-content: center;
+        // grid-area: video;
+        // display: flex;
+        // width: 100%;
+        // margin-bottom: 15px;
+        // grid-template-columns: 1fr 2fr;
+        // grid-gap: 20px;
+    }
+    .contacts {
+        width: 90%;
+        height: auto;
     }
 }

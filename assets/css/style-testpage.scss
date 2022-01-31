@@ -25,32 +25,46 @@
         display: flex;
         flex-direction: column;
         .test-card {
-            margin-left: 10%;
+            display: flex;
+            flex-direction: column;
+            margin-left: 15%;
+            margin-top: 25px;
             margin-bottom: 4%;
-            width: 85%;
+            width: 65%;
             height: 300px;
-            padding: 32px 60px;
-            overflow: hidden;
             box-sizing: border-box;
+            overflow: hidden;
             font-weight: 300;
-            font-size: 18px;
+            font-size: 25px;
             line-height: 28px;
+            background: url("../images/main/London.jpg") center/cover;
+            height: auto;
+            // margin-left: 15%;
+            // margin-bottom: 4%;
+            // width: 85%;
+            // height: 300px;
+            // padding: 32px 60px;
+            // overflow: hidden;
+            // box-sizing: border-box;
+            // font-weight: 300;
+            // font-size: 18px;
+            // line-height: 28px;
         }
-        .test-card-img {
-            position: absolute;
-            width: 60%;
-            height: 280px;
-        }
-        .blue {
-            opacity: 0.4;
-        }
+        // .test-card-img {
+        //     position: absolute;
+        //     width: 60%;
+        //     height: 280px;
+        // }
+        // .blue {
+        //     opacity: 0.4;
+        // }
         .description-test {
             padding-left: 15px;
             .test-card-headline {
                 position: relative;
                 margin-bottom: 10px;
                 font-weight: 900;
-                font-size: 28px;
+                // font-size: 28px;
                 line-height: 48px;
                 color: #ffffff;
             }
@@ -62,6 +76,7 @@
             }
             .go-test {
                 position: relative;
+                margin-bottom: 5px;
                 padding: 10px 20px;
                 font-weight: 500;
                 font-size: 18px;
@@ -80,5 +95,39 @@
         display: none;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+// планшет
+@media screen and (max-width: 900px) {
+    .testcards-block {
+        margin-left: 5%;
+        width: 90%;
+    }
+    .test-card {
+        margin-left: 0;
+        padding: 0;
+        background-color: aqua;
+    }
+    .test-card-headline {
+        font-size: 20px;
+    }
+}
+
+// телефон
+@media screen and (max-width: 400px) {
+    .testcards-block {
+        margin-left: 0%;
+        width: auto;
+        .description-test {
+            .test-card-headline {
+                font-size: 18px;
+                color: aquamarine;
+            }
+            .test-card-text {
+                margin: 1px 30px 30px 1px;
+                font-size: 20px;
+            }
+        }
     }
 }

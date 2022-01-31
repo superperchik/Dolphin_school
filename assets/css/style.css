@@ -182,25 +182,25 @@ ul.sidenav li a {
 }
 
 .page-menu-link-cab::before {
-  background-image: url("/assets/images/main/menu.png");
+  background-image: url("../images/main/menu.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .page-menu-link-book::before {
-  background-image: url("/assets/images/main/book.png");
+  background-image: url("../images/main/book.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .page-menu-link-home::before {
-  background-image: url("/assets/images/main/home.png");
+  background-image: url("../images/main/home.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .page-menu-link-exam::before {
-  background-image: url("/assets/images/main/homework.png");
+  background-image: url("../images/main/homework.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -323,7 +323,7 @@ div.content {
   font-weight: 300;
   font-size: 25px;
   line-height: 28px;
-  background: url("/assets/images/main/London.jpg") center/cover;
+  background: url("../images/main/London.jpg") center/cover;
   height: auto;
 }
 
@@ -359,11 +359,12 @@ div.content {
 
 /* Раздел с видео и музыкой */
 .media {
+  margin-left: 15%;
   margin-top: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 75%;
+  width: 65%;
 }
 
 .lesson-video {
@@ -443,7 +444,7 @@ div.content {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 25%;
+  width: 15%;
   margin-left: 15%;
   padding: 20px 0 20px 30px;
   background-color: #ffffff;
@@ -599,6 +600,27 @@ div.content {
     margin-left: 0px;
     margin-bottom: 15px;
   }
+  .media {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+  .media .lesson-video {
+    width: auto;
+  }
+  .media .video-play-list-wrapper {
+    margin-top: 15px;
+    margin-left: 0;
+    width: auto;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -658,6 +680,32 @@ div.content {
   .slider a {
     font-size: 18px;
     width: 45%;
+  }
+  .media {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+  .media .lesson-video {
+    width: 80%;
+    height: auto;
+  }
+  .media .video-play-list-wrapper {
+    margin-top: 15px;
+    margin-left: 0;
+    width: 80%;
+  }
+  .contacts {
+    width: 90%;
+    height: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -13,6 +13,10 @@
 
 .page-main-manual {
     background-color: #f1f3fe;
+    display: flex;
+    margin-left: 10%;
+    margin-right: auto;
+    width: 80%;
 }
 
 .title-manual {
@@ -30,7 +34,7 @@
     grid-column-gap: 25px;
     grid-row-gap: 25px;
     max-width: 1200px;
-    width: 100%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 150px;
@@ -252,4 +256,21 @@
 .micromodal-slide .modal__container,
 .micromodal-slide .modal__overlay {
     will-change: transform;
+}
+
+@media screen and (max-width: 900px) {
+    .title-manual {
+        text-align: center;
+        width: 100%;
+    }
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+// телефон
+@media screen and (max-width: 400px) {
+    .card__category {
+        font-size: 18px;
+    }
 }
