@@ -12,6 +12,7 @@
 
 .page-main-homework {
     background-color: #f1f3fe;
+    margin-left: 10%;
     .tittle-homework {
         margin-top: 35px;
         margin-left: 20px;
@@ -123,6 +124,9 @@
         display: flex;
         flex-direction: column;
         border-radius: 10px;
+        // .item:first-child {
+        //     margin-left: 5px;
+        // }
         h2 {
             margin-top: 10px;
             color: #4a4e66;
@@ -161,5 +165,22 @@
         //     /*border is optional*/
         //     // border-bottom: 1px solid #444;
         // }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    // .content {
+    //     margin-left: 0%;
+    // }
+    .page-main-homework {
+        margin-left: 0%;
+    }
+    .item:first-child {
+        margin-left: 5px;
+    }
+    .homework-description {
+        .hide-work {
+            width: auto;
+        }
     }
 }

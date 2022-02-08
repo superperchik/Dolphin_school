@@ -12,6 +12,7 @@
 
 .page-main-homework {
   background-color: #f1f3fe;
+  margin-left: 10%;
 }
 
 .page-main-homework .tittle-homework {
@@ -202,5 +203,17 @@
   padding: 0;
   font: inherit;
   cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .page-main-homework {
+    margin-left: 0%;
+  }
+  .item:first-child {
+    margin-left: 5px;
+  }
+  .homework-description .hide-work {
+    width: auto;
+  }
 }
 /*# sourceMappingURL=style-homework.css.map */

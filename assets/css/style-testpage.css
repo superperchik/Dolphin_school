@@ -56,6 +56,17 @@
   height: auto;
 }
 
+.page-main-tests .testcards-block .test-card:nth-child(2) {
+  background: url("../images/tests/liecester-square.jpg") rgba(0, 0, 0, 0.6);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.page-main-tests .testcards-block .test-card:nth-child(3) {
+  background: url("../images/tests/scotland.jpg") center/cover;
+}
+
 .page-main-tests .testcards-block .description-test {
   padding-left: 15px;
 }

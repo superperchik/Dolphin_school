@@ -50,6 +50,15 @@
             // font-size: 18px;
             // line-height: 28px;
         }
+        .test-card:nth-child(2) {
+            background: url("../images/tests/liecester-square.jpg") rgba(0, 0, 0, 0.6);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .test-card:nth-child(3) {
+            background: url("../images/tests/scotland.jpg") center/cover;
+        }
         // .test-card-img {
         //     position: absolute;
         //     width: 60%;
