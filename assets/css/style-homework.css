@@ -10,6 +10,14 @@
   background-position: center;
 }
 
+.zablur {
+  position: absolute;
+  -webkit-filter: blur(1.5rem);
+          filter: blur(1.5rem);
+  background-color: #576BCC;
+  width: 100%;
+}
+
 .page-main-homework {
   background-color: #f1f3fe;
   margin-left: 10%;

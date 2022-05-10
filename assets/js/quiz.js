@@ -108,19 +108,42 @@ class Result {
 }
 
 const results = [
-    new Result("Вам многому нужно научиться", 0),
-    new Result("Вы уже неплохо разбираетесь", 2),
-    new Result("Ваш уровень выше среднего", 4),
-    new Result("Вы в совершенстве знаете тему", 6)
+    new Result("Увы, о Лондоне вы не знаете абсолютно ничего", 0),
+    new Result("Вы уже неплохо разбираетесь и сможете отличить Биг-Бен от Вестминстерского аббатства", 2),
+    new Result("Ваш прекрасно разбираетесь в тонкостях жизни в Лондоне", 5)
 ];
 
 //Массив с вопросами
 const questions = [
-    new Question("2 + 2 = ", [
-        new Answer("2", 0),
-        new Answer("3", 0),
-        new Answer("4", 1),
-        new Answer("0", 0)
+    new Question("London is the capital of ....", [
+        new Answer("the USA", 0),
+        new Answer("the Netherlands", 0),
+        new Answer(" he Republic of Ireland", 0),
+        new Answer("the UK", 1)
+    ]),
+    new Question("The most famous clock in London and in the UK is ....", [
+        new Answer("Big Ben", 1),
+        new Answer("Big John", 0),
+        new Answer("Big Brother", 0),
+        new Answer("Little Ben", 0)
+    ]),
+    new Question("At first kings and queens of Britain lived in ....", [
+        new Answer("Buckingham Palace", 0),
+        new Answer("Hampton Court", 0),
+        new Answer("the Tower of London", 1),
+        new Answer("Windsor Castle", 0)
+    ]),
+    new Question("Why is it called Bloody Tower?", [
+        new Answer("blood was kept there", 0),
+        new Answer("a king was killed there", 0),
+        new Answer("a queen was killed there", 0),
+        new Answer("it has a history of blood", 1)
+    ]),
+    new Question("What river does London stand on?", [
+        new Answer("the Thames", 1),
+        new Answer("the Clyde", 0),
+        new Answer("the Volga", 0),
+        new Answer("the Severn", 0)
     ])
 ];
 

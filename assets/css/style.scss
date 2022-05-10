@@ -53,9 +53,10 @@ body {
         display: flex;
         width: 70%;
         h1 {
+            font-family: 'Neucha', cursive;
             margin-left: 10%;
             align-self: center;
-            font-size: 25px;
+            font-size: 45px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -64,15 +65,30 @@ body {
         width: 15%;
         display: flex;
         .english-chg {
-            padding: 0 0 auto;
-            align-self: center;
-            width: 50px;
+            cursor: pointer;
+            color: #fff;
+            /* Цвет текста */
+            background: #576bcc;
+            /* Цвет фона */
+            padding: 10px;
+            /* Поля вокруг текста */
+            transition: 1s linear;
+            /* Время изменения */
+            // padding: 0 0 auto;
+            // align-self: center;
+            // width: 50px;
             height: 20px;
             margin: 30px;
             margin-left: 25%;
-            background: #576bcc;
-            color: #fff;
+            // background: #576bcc;
+            // color: #fff;
             font-size: 20px;
+        }
+        .english-chg:hover {
+            color: #fff;
+            /* Цвет текста */
+            background: #ff8f0b;
+            /* Цвет фона */
         }
     }
 }
@@ -203,7 +219,175 @@ div.content {
     margin-left: 5%;
     padding: 1px 10px;
     height: auto;
-    // height: auto;
+    flex-wrap: wrap;
+}
+
+// Модальное окно
+.modal {
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+}
+
+.modal__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__container {
+    background-color: #fff;
+    padding: 30px;
+    max-width: 500px;
+    max-height: 100vh;
+    border-radius: 4px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.modal__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.25;
+    color: #00449e;
+    box-sizing: border-box;
+}
+
+.modal__close {
+    background: transparent;
+    border: 0;
+}
+
+.modal__header .modal__close:before {
+    content: "\2715";
+}
+
+.modal__content {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, .8);
+}
+
+.modal__btn {
+    font-size: .875rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background-color: #e6e6e6;
+    color: rgba(0, 0, 0, .8);
+    border-radius: .25rem;
+    border-style: none;
+    border-width: 0;
+    cursor: pointer;
+    -webkit-appearance: button;
+    text-transform: none;
+    overflow: visible;
+    line-height: 1.15;
+    margin: 0;
+    will-change: transform;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    transition: -webkit-transform .25s ease-out;
+    transition: transform .25s ease-out;
+    transition: transform .25s ease-out, -webkit-transform .25s ease-out;
+}
+
+.modal__btn:focus,
+.modal__btn:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.modal__btn-primary {
+    background-color: #00449e;
+    color: #fff;
+}
+
+
+/**************************\
+    Demo Animation Style
+  \**************************/
+
+@keyframes mmfadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes mmfadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes mmslideIn {
+    from {
+        transform: translateY(15%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes mmslideOut {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10%);
+    }
+}
+
+.micromodal-slide {
+    display: none;
+}
+
+.micromodal-slide.is-open {
+    display: block;
+}
+
+.micromodal-slide[aria-hidden="false"] .modal__overlay {
+    animation: mmfadeIn .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.micromodal-slide[aria-hidden="false"] .modal__container {
+    animation: mmslideIn .3s cubic-bezier(0, 0, .2, 1);
+}
+
+.micromodal-slide[aria-hidden="true"] .modal__overlay {
+    animation: mmfadeOut .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.micromodal-slide[aria-hidden="true"] .modal__container {
+    animation: mmslideOut .3s cubic-bezier(0, 0, .2, 1);
+}
+
+.micromodal-slide .modal__container,
+.micromodal-slide .modal__overlay {
+    will-change: transform;
 }
 
 
@@ -383,7 +567,7 @@ div.content {
 
 .slider a {
     width: 15%;
-    padding: 15px 10px;
+    padding: 15px 20px;
     padding-right: 5px;
     margin-left: 15px;
     margin-bottom: 10px;
@@ -483,7 +667,10 @@ div.content {
     flex-direction: column;
     //25%
     width: 15%;
-    margin-left: 15%;
+    // margin-left: 80%;
+    top: 115px;
+    left: 82%;
+    position: absolute;
     padding: 20px 0 20px 30px;
     background-color: #ffffff;
     box-shadow: 0 1px 4px rgba(60, 66, 95, 0.2);
@@ -661,6 +848,35 @@ div.content {
 //         margin: 15px auto;
 //     }
 // }
+@media screen and (max-width: 1440px) {
+    .contacts {
+        left: 84%;
+        width: 14%;
+        padding-left: 14px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .slider {
+        width: 80%;
+    }
+    .media {
+        width: 80%;
+    }
+    .contacts {
+        margin-left: 15%;
+        position: relative;
+        top: 0%;
+        left: 0%;
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+}
+
 // планшет
 @media screen and (max-width: 900px) {
     ul.sidenav {
@@ -740,11 +956,14 @@ div.content {
         }
     }
     .contacts {
+        position: relative;
+        top: 0%;
+        left: 0%;
         display: flex;
         justify-content: center;
         width: 95%;
         height: auto;
-        margin-left: 0px;
+        margin-left: 10px;
         margin-bottom: 15px;
     }
     .media {
@@ -776,7 +995,7 @@ div.content {
 }
 
 // телефон
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 425px) {
     ul.sidenav li a {
         text-align: center;
         float: none;

@@ -1,0 +1,45 @@
+@charset "UTF-8";
+.blurbox {
+  background-color: aqua;
+  width: 100%;
+  height: 100em;
+}
+
+.blurbox .info {
+  left: 25%;
+  top: 30%;
+  position: absolute;
+  width: 50%;
+  border: 2px white solid;
+}
+
+.blurbox .info h1 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.blurbox .info a {
+  cursor: pointer;
+  color: #fff;
+  /* Цвет текста */
+  background: #576bcc;
+  /* Цвет фона */
+  padding: 10px;
+  /* Поля вокруг текста */
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  /* Время изменения */
+  height: 20px;
+  margin: 30px;
+  margin-left: 25%;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.blurbox .info a:hover {
+  color: #fff;
+  /* Цвет текста */
+  background: #ff8f0b;
+  /* Цвет фона */
+}
+/*# sourceMappingURL=style-homeworkblur.css.map */
