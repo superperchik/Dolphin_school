@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,22 +9,20 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/style-homework.css">
     <!-- <link href="https://assets.htmlacademy.ru/content/skills/6/case-01/outline.css" rel="stylesheet"> -->
+	 <!-- require_once "assets/functions/connection.php";
    
-   <?php
-	require_once "assets/functions/connection.php";
-    //require_once "assets/functions/dataconnection.php";
-    //$works = getWork(7);
-    $result = mysqli_query($induction, "SELECT * FROM `homework`");
+     <?php require "assets/functions/db.php"; ?>
+     var_dump($_SESSION['logged_user']);
+    $result = mysqli_query($induction, "SELECT * FROM `homework`"); -->
     
-     ?> 
-    
-      
-    <title>Домашняя работа</title>
+
+
+        <title>Домашняя работа</title>
 
 </head>
 
-<body >
-<div class="wrapper">
+<body>
+    <div class="wrapper">
         <header class="page-header">
             <div class="part1">
                 <a class="logo" href="#">
@@ -42,14 +40,14 @@
 
         <nav>
             <ul class="sidenav">
-                <li class="page-menu-item page-menu-item-active">
-                    <a class="page-menu-link page-menu-link-cab">Главная</a>
+                <li class="page-menu-item ">
+                    <a class="page-menu-link page-menu-link-cab-home">Главная</a>
                 </li>
                 <li class="page-menu-item">
                     <a class="page-menu-link page-menu-link-book" href="manualpage.html">Методичка</a>
                 </li>
-                <li class="page-menu-item">
-                    <a class="page-menu-link page-menu-link-home" href="homeworkpage.php">Домашняя работа</a>
+                <li class="page-menu-item page-menu-item-active">
+                    <a class="page-menu-link page-menu-link-home page-menu-link-home-active" href="homeworkpage.php">Домашняя работа</a>
                 </li>
                 <li class="page-menu-item">
                     <a class="page-menu-link page-menu-link-exam" href="testpage.html">Тесты</a>
@@ -58,7 +56,23 @@
         </nav>
 
         <div class="content">
-        <main class="page-main-homework">
+       
+<?php if (isset($_SESSION['logged_user'])) : ?>
+
+Авторизован ! <br>
+Привет, <?php echo $_SESSION['logged_user']->email; ?>!
+<hr>
+<a href = "#">Выйти</a>
+
+<?php else : ?>
+    
+    <div class="messadge">
+                <h1 class="messadge-info">Данный раздел доступен только авторизированным пользователям</h1>
+                <a class="messadge-link" href="loginpage.php">Войти</a>
+            </div>
+<?php endif;  ?>
+            
+            <!-- <main class="page-main-homework">
         <h1 class="tittle-homework">Домашняя работа</h1>
         <div class="homework-cards">
             <div id="wrapper">
@@ -125,23 +139,23 @@
         
 
 
-    </main>
+    </main> -->
         </div>
-    <!--  -->
-    <footer class="page-footer">
+        <!--  -->
+        <footer class="page-footer">
             <p class="copyright"> 2022</p>
             <a class="page-footer-logo" href="#"><b>Dolphin school</b>, языковая школа</a>
             <p class="copyright-details"> <a href="https://vk.com/id161066998" target="_blank">Сайт создан Иваном Поддубным</a>
                 <p class="copyright-details eng-href-footer"> <a href="#" target="_blank">English version</a>
                 </p>
         </footer>
-    <script src="assets/js/carousel.js"></script>
-    <script src="assets/js/show-hide-homework.js"></script>
+        <script src="assets/js/carousel.js"></script>
+        <script src="assets/js/show-hide-homework.js"></script>
     </div>
 </body>
 
 
-   <!-- <div class="item">
+<!-- <div class="item">
                             <h2>Заголовок</h2>
                             <p class="topic-name">Название темы</p>
                             <div class="deadline">
@@ -177,4 +191,3 @@
                             </div>
                             <button class="open-work">Открыть</button>
                         </div> -->
-                      

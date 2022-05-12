@@ -1,4 +1,5 @@
 (function($) {
+
     $.fn.extend({
         donetyping: function(callback, timeout) {
             timeout = timeout || 500;

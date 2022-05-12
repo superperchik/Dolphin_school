@@ -1,21 +1,47 @@
-.page-menu-link-cab-manual::before {
+.page-menu-link-cab-home::before {
   background-image: url("/assets/images/manual/menu.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.page-menu-link-homework-active::before {
+.page-menu-link-home-active::before {
   background-image: url("/assets/images/homework/homework.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.zablur {
-  position: absolute;
-  -webkit-filter: blur(1.5rem);
-          filter: blur(1.5rem);
-  background-color: #576BCC;
-  width: 100%;
+.messadge {
+  border: 5px #576BCC solid;
+  width: 50%;
+  height: 150px;
+  margin-top: 10%;
+  margin-left: 25%;
+}
+
+.messadge .messadge-info {
+  padding-bottom: 5%;
+  font-size: 24px;
+  color: #576BCC;
+  text-align: center;
+}
+
+.messadge .messadge-link {
+  cursor: pointer;
+  color: #fff;
+  background: #576bcc;
+  padding: 10px;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  height: 20px;
+  margin-top: 40px;
+  margin-left: 45%;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.messadge a:hover {
+  color: #fff;
+  background: #ff8f0b;
 }
 
 .page-main-homework {
@@ -222,6 +248,29 @@
   }
   .homework-description .hide-work {
     width: auto;
+  }
+  .messadge {
+    width: 50%;
+    height: auto;
+    margin-top: 15%;
+    margin-bottom: 20%;
+    margin-left: 25%;
+  }
+  .messadge .messadge-info {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 16px;
+    color: #576BCC;
+    text-align: center;
+    margin-bottom: 10%;
+    padding: 0;
+  }
+  .messadge .messadge-link {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 10px;
+    font-size: 12px;
+    margin-left: 40%;
   }
 }
 /*# sourceMappingURL=style-homework.css.map */
