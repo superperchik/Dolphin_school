@@ -1,239 +1,279 @@
-.page-menu-link-cab-home::before {
-    background-image: url("/assets/images/manual/menu.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.page-menu-link-home-active::before {
-    background-image: url("/assets/images/homework/homework.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.messadge {
-    border: 5px #576BCC solid;
-    width: 50%;
-    height: 150px;
-    margin-top: 10%;
-    margin-left: 25%;
-    .messadge-info {
-        // padding-top: 20px;
-        padding-bottom: 5%;
-        font-size: 24px;
-        color: #576BCC;
-        text-align: center;
+    .page-menu-link-cab-home::before {
+        background-image: url("/assets/images/manual/menu.png");
+        background-repeat: no-repeat;
+        background-position: center;
     }
-    .messadge-link {
-        cursor: pointer;
-        color: #fff;
-        background: #576bcc;
-        padding: 10px;
-        transition: 1s linear;
-        height: 20px;
-        margin-top: 40px;
-        margin-left: 45%;
-        font-size: 20px;
-        text-decoration: none;
+    
+    .page-menu-link-home-active::before {
+        background-image: url("/assets/images/homework/homework.png");
+        background-repeat: no-repeat;
+        background-position: center;
     }
-    a:hover {
-        color: #fff;
-        background: #ff8f0b;
-    }
-}
-
-.page-main-homework {
-    background-color: #f1f3fe;
-    margin-left: 10%;
-    .tittle-homework {
-        margin-top: 35px;
-        margin-left: 20px;
-        margin-bottom: 25px;
-    }
-    .homework-cards {
-        // Карусель
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 100%;
-        height: 200px;
-        background-color: #576BCC;
-    }
-    .homework-description {
-        position: relative;
-        display: none;
-        margin-top: 25px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 110px;
-        width: 90%;
-        height: auto;
-        background-color: #FFFCFC;
-        .hide-work {
-            margin-top: auto;
-            margin-right: auto;
-            position: absolute;
-            width: 10%;
-            height: 50px;
-            bottom: 5%;
-            right: 5%;
-            // position: relative;
-            // padding: 10px 20px;
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 22px;
-            color: #ffffff;
-            text-decoration: none;
-            background-color: #576BCC;
-            border: none;
-            border-radius: 5px;
-        }
-        .topic-name-card {
-            padding-top: 20px;
-            padding-left: 50px;
-            padding-bottom: 5px;
-            border-bottom: 2px solid #576BCC;
-        }
-        .DescriptionHomeWork {
-            padding-bottom: 10%;
-            line-height: 1.5;
-            font-size: 25px;
-            padding-left: 50px;
-            padding-right: 50px;
-        }
-    }
-    // карусель
-    #wrapper {
-        width: 100%;
-        max-width: 1500px;
-        position: relative;
-    }
-    #carousel {
-        overflow: auto;
-        scroll-behavior: smooth;
-        scrollbar-width: none;
-    }
-    #carousel::-webkit-scrollbar {
-        height: 0;
-    }
-    #prev,
-    #next {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        background: rgb(223, 221, 221);
-        border: none;
-        padding: 8px;
-        border-radius: 50%;
-        outline: 0;
-        cursor: pointer;
-        position: absolute;
-    }
-    #prev {
-        top: 50%;
-        left: 0;
-        transform: translate(50%, -50%);
-        display: none;
-    }
-    #next {
-        top: 50%;
-        right: 0;
-        transform: translate(-50%, -50%);
-    }
-    #content {
-        display: grid;
-        grid-gap: 16px;
-        grid-auto-flow: column;
-        margin: auto;
-        box-sizing: border-box;
-    }
-    .item {
-        width: 300px;
-        height: 180px;
-        background: #FFFFFF;
-        display: flex;
-        flex-direction: column;
-        border-radius: 10px;
-        // .item:first-child {
-        //     margin-left: 5px;
-        // }
-        h2 {
-            margin-top: 10px;
-            color: #4a4e66;
-            font-size: 18px;
-            text-align: center;
-        }
-        .topic-name {
-            font-size: 20px;
-            color: #3C425F;
-            text-align: center;
-            font-weight: 400;
-            height: 10px;
-        }
-        .deadline {
-            font-size: 15px;
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
-            margin-right: 20px;
-            gap: 5px;
-        }
-        .open-work {
-            font-size: 15px;
-            text-decoration: none;
-            text-align: right;
-            margin-right: 20px;
-            height: 10%;
-            background: none;
-            color: inherit;
-            border: none;
-            padding: 0;
-            font: inherit;
-            cursor: pointer;
-        }
-        // button {
-        //     /*border is optional*/
-        //     // border-bottom: 1px solid #444;
-        // }
-    }
-}
-
-@media screen and (max-width: 900px) {
-    // .content {
-    //     margin-left: 0%;
-    // }
-    .page-main-homework {
-        margin-left: 0%;
-    }
-    .item:first-child {
-        margin-left: 5px;
-    }
-    .homework-description {
-        .hide-work {
-            width: auto;
-        }
-    }
+    
     .messadge {
+        border: 5px #576BCC solid;
         width: 50%;
-        height: auto;
-        margin-top: 15%;
-        margin-bottom: 20%;
+        height: 150px;
+        margin-top: 10%;
         margin-left: 25%;
         .messadge-info {
-            box-sizing: border-box;
             // padding-top: 20px;
-            font-size: 16px;
+            padding-bottom: 5%;
+            font-size: 24px;
             color: #576BCC;
             text-align: center;
-            margin-bottom: 10%;
-            padding: 0;
         }
         .messadge-link {
-            box-sizing: border-box;
-            height: 10px;
-            font-size: 12px;
-            margin-left: 40%;
+            cursor: pointer;
+            color: #fff;
+            background: #576bcc;
+            padding: 10px;
+            transition: 1s linear;
+            height: 20px;
+            margin-top: 40px;
+            margin-left: 45%;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #fff;
+            background: #ff8f0b;
         }
     }
-}
+    
+    .page-main-homework {
+        background-color: #f1f3fe;
+        margin-left: 10%;
+        .form-teacher {
+            margin-top: 55px;
+            margin-left: 10%;
+            .form__control--textarea {
+                height: 350px;
+            }
+        }
+        .tittle-homework {
+            margin-top: 35px;
+            margin-left: 20px;
+            margin-bottom: 25px;
+        }
+        .homework-cards {
+            // Карусель
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            height: 200px;
+            background-color: #576BCC;
+        }
+        .homework-description {
+            position: relative;
+            display: none;
+            margin-top: 25px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 110px;
+            width: 90%;
+            height: auto;
+            background-color: #FFFCFC;
+            .hide-work {
+                margin-top: auto;
+                margin-right: auto;
+                position: absolute;
+                width: 10%;
+                height: 50px;
+                bottom: 5%;
+                right: 5%;
+                // position: relative;
+                // padding: 10px 20px;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 22px;
+                color: #ffffff;
+                text-decoration: none;
+                background-color: #576BCC;
+                border: none;
+                border-radius: 5px;
+            }
+            .topic-name-card {
+                padding-top: 20px;
+                padding-left: 50px;
+                padding-bottom: 5px;
+                border-bottom: 2px solid #576BCC;
+            }
+            .DescriptionHomeWork {
+                padding-bottom: 10%;
+                line-height: 1.5;
+                font-size: 25px;
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+        }
+        // карусель
+        #wrapper {
+            width: 100%;
+            max-width: 1500px;
+            position: relative;
+        }
+        #carousel {
+            overflow: auto;
+            scroll-behavior: smooth;
+            scrollbar-width: none;
+        }
+        #carousel::-webkit-scrollbar {
+            height: 0;
+        }
+        #prev,
+        #next {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            background: rgb(223, 221, 221);
+            border: none;
+            padding: 8px;
+            border-radius: 50%;
+            outline: 0;
+            cursor: pointer;
+            position: absolute;
+        }
+        #prev {
+            top: 50%;
+            left: 0;
+            transform: translate(50%, -50%);
+            display: none;
+        }
+        #next {
+            top: 50%;
+            right: 0;
+            transform: translate(-50%, -50%);
+        }
+        #content {
+            display: grid;
+            grid-gap: 16px;
+            grid-auto-flow: column;
+            margin: auto;
+            box-sizing: border-box;
+        }
+        .item {
+            width: 300px;
+            height: 180px;
+            background: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            // .item:first-child {
+            //     margin-left: 5px;
+            // }
+            h2 {
+                margin-top: 10px;
+                color: #4a4e66;
+                font-size: 18px;
+                text-align: center;
+            }
+            .topic-name {
+                font-size: 20px;
+                color: #3C425F;
+                text-align: center;
+                font-weight: 400;
+                height: 10px;
+            }
+            .deadline {
+                font-size: 15px;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                margin-right: 20px;
+                gap: 5px;
+            }
+            .open-work {
+                font-size: 15px;
+                text-decoration: none;
+                text-align: right;
+                margin-right: 20px;
+                height: 10%;
+                background: none;
+                color: inherit;
+                border: none;
+                padding: 0;
+                font: inherit;
+                cursor: pointer;
+            }
+            // button {
+            //     /*border is optional*/
+            //     // border-bottom: 1px solid #444;
+            // }
+        }
+    }
+    
+    @media screen and (max-width: 900px) {
+        // .content {
+        //     margin-left: 0%;
+        // }
+        .page-main-homework {
+            margin-left: 0%;
+        }
+        .item:first-child {
+            margin-left: 5px;
+        }
+        .homework-description {
+            .hide-work {
+                width: auto;
+            }
+        }
+        .messadge {
+            width: 50%;
+            height: 150px;
+            margin-top: 15%;
+            margin-bottom: 20%;
+            margin-left: 25%;
+            .messadge-info {
+                box-sizing: border-box;
+                // padding-top: 20px;
+                font-size: 20px;
+                color: #576BCC;
+                text-align: center;
+                margin-bottom: 10%;
+                padding: 0;
+            }
+            .messadge-link {
+                box-sizing: border-box;
+                height: 16px;
+                font-size: 20px;
+                margin-left: 40%;
+            }
+        }
+        .page-main-homework {
+            .homework-description {
+                .hide-work {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    
+    @media screen and (max-width: 425px) {
+        .messadge {
+            .messadge-info {
+                font-size: 16px;
+            }
+            .messadge-link {
+                font-size: 14px;
+                margin-left: 35%;
+            }
+        }
+        .hide-work {
+            font-size: 12px;
+        }
+        .page-main-homework {
+            .homework-description {
+                .hide-work {
+                    font-size: 14px;
+                    width: 25%;
+                    height: 50px;
+                    bottom: 5%;
+                    right: 15%;
+                }
+            }
+        }
+    }

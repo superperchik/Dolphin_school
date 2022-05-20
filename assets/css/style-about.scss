@@ -1,0 +1,57 @@
+.page-menu-link-cab-about::before {
+    background-image: url("/assets/images/manual/menu.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about {
+    margin-top: 50px;
+    margin-left: 12%;
+    display: flex;
+    .image-about {
+        display: flex;
+        flex-direction: column;
+        img {
+            width: 250px;
+        }
+        h2 {
+            text-align: center;
+            line-height: 1;
+        }
+    }
+    .text-about {
+        h1 {
+            text-align: center;
+            color: #576BCC;
+            border-bottom: 2px solid #000;
+            padding-bottom: 15px;
+            font-size: 36px;
+        }
+        margin-left: 15px;
+        p {
+            font-size: 20px;
+            padding-right: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .about {
+        margin-left: 0;
+        flex-direction: column;
+        .image-about {
+            img {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        .text-about {
+            h1 {
+                line-height: 1.5;
+            }
+            p {
+                padding-left: 10px;
+            }
+        }
+    }
+}

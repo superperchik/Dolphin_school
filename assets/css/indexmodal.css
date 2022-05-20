@@ -1,0 +1,154 @@
+@charset "UTF-8";
+/* свойства модального окна по умолчанию */
+.modal {
+  position: fixed;
+  /* фиксированное положение */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  /* цвет фона */
+  z-index: 1050;
+  opacity: 0;
+  /* по умолчанию модальное окно прозрачно */
+  -webkit-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  /* анимация перехода */
+  pointer-events: none;
+  /* элемент невидим для событий мыши */
+}
+
+/* при отображении модального окно */
+.modal:target {
+  opacity: 1;
+  pointer-events: auto;
+  overflow-y: auto;
+}
+
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 500px;
+    margin: 30px auto;
+  }
+}
+
+/* свойства для блока, содержащего контент модального окна */
+.modal-content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: .3rem;
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* свойства для заголовка модального окна */
+.modal-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #eceeef;
+}
+
+.modal-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.5;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+/* свойства для кнопки "Закрыть" */
+.close {
+  float: right;
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: .5;
+  text-decoration: none;
+}
+
+/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+.close:focus,
+.close:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: .75;
+}
+
+/* свойства для блока, содержащего основное содержимое окна */
+.modal-body {
+  position: relative;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 15px;
+  overflow: auto;
+}
+
+.form__control {
+  margin-bottom: 10px;
+  display: block;
+  width: 80%;
+  height: calc(2.25rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #bdbdbd;
+  border-radius: 0.25rem;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.form__control--textarea {
+  height: calc(2.25rem + 25px);
+}
+
+.btn--blue {
+  background-color: #576bcc;
+  color: #f1f3fe;
+  height: 45px;
+  width: auto;
+  font-size: 16px;
+}
+/*# sourceMappingURL=indexmodal.css.map */

@@ -15,35 +15,42 @@
 
 <body>
     <div class="wrapper">
-        <header class="page-header">
-            <div class="part1">
-                <a class="logo" href="#">
-                    <img class="logo-img" src="assets/images/main/logotip.jpg" alt="Dolphin, языковая школа">
-                </a>
-            </div>
-            <div class="part2">
-                <h1>Школа Англиского языка Dolphin School</h1>
-            </div>
-            <div class="part3">
-                <a class="english-chg"><span>ENG</span></a>
-            </div>
-
-        </header>
+    <header class="page-header">
+                <div class="part1">
+                    <a class="logo" href="index.php">
+                        <img class="logo-img" src="assets/images/main/logotip.jpg" alt="Dolphin, языковая школа">
+                    </a>
+                </div>
+                <div class="part2">
+                    <h1>Школа Англиского языка Dolphin School</h1>
+                </div>
+                <?php if(isset($_SESSION['user'])) {?>
+                <div class="part4">
+                    <a class="exit-chg" href="vendor/logout.php">Выйти</a>
+                </div>
+                <?php } ?>
+                <div class="part3">
+                    <a class="english-chg" href="loginpage.php">English</a>
+                </div>
+            </header>
 
         <nav>
             <ul class="sidenav">
                 <li class="page-menu-item ">
-                    <a class="page-menu-link page-menu-link-cab-manual" href="index.html">Главная</a>
+                    <a class="page-menu-link page-menu-link-cab-manual" href="index.php">Главная</a>
                 </li>
                 <li class="page-menu-item page-menu-item-active">
-                    <a class="page-menu-link page-menu-link-book-manual" href="manualpage.html">Методичка</a>
+                    <a class="page-menu-link page-menu-link-book-manual" href="#">Методичка</a>
                 </li>
                 <li class="page-menu-item">
                     <a class="page-menu-link page-menu-link-home" href="homeworkpage.php">Домашняя работа</a>
                 </li>
                 <li class="page-menu-item">
-                    <a class="page-menu-link page-menu-link-exam" href="testpage.html">Тесты</a>
+                    <a class="page-menu-link page-menu-link-exam" href="testpage.php">Тесты</a>
                 </li>
+                <li class="page-menu-item">
+                        <a class="page-menu-link page-menu-link-about" href="aboutus.php">О нас</a>
+                    </li>
             </ul>
         </nav>
         <div class="content">
@@ -82,59 +89,6 @@
                 </p>
         </footer>
     </div>
-    <!-- <nav class="page-menu">
-        <a class="logo" href="index.html">
-            <img class="logo-img" src="assets/images/main/logotip.jpg" alt="Dolphin, языковая школа">
-        </a>
-        <ul class="page-menu-list">
-            <li class="page-menu-item ">
-                <a class="page-menu-link page-menu-link-cab-manual" href="index.html">Главная</a>
-            </li>
-            <li class="page-menu-item page-menu-item-active">
-                <a class="page-menu-link page-menu-link-book-manual">Методичка</a>
-            </li>
-            <li class="page-menu-item">
-                <a class="page-menu-link page-menu-link-home" href="homeworkpage.php">Домашняя работа</a>
-            </li>
-            <li class="page-menu-item">
-                <a class="page-menu-link page-menu-link-exam" href="testpage.html">Тесты</a>
-            </li>
-        </ul>
-    </nav>
-    <header class="page-header">
-        <button class="english-btn" type="button"><span>ENG</span></button>
-    </header>
-    <main class="page-main-manual">
-        <h1 class="title-manual">Методичка</h1>
-        <div class="card-grid">
-            <a class="card card-1" href="#">
-                <div class="card__background" style="background-image: url(assets/images/manual/englishbook1.jpg)"></div>
-                <div class="card__content">
-                    <h3 class="card__category">Учебное пособие</h3>
-
-                </div>
-            </a>
-            <a class="card card-2" href="#">
-                <div class="card__background" style="background-image: url(assets/images/manual/englishbook2.jpg)"></div>
-                <div class="card__content">
-                    <h3 class="card__category">Самоучитель</h3>
-                </div>
-            </a>
-            <a class="card card-3" href="#">
-                <div class="card__background" style="background-image: url(assets/images/manual/englishbook3.jpg)"></div>
-                <div class="card__content">
-                    <h3 class="card__category">Учебник старшей школы</h3>
-                </div>
-            </a>
-        </div>
-    </main>
-    <footer class="page-footer">
-        <p class="copyright"> 2022</p>
-        <a class="page-footer-logo" href="#"><b>Dolphin school</b>, языковая школа</a>
-        <p class="copyright-details"> <a href="https://vk.com/id161066998" target="_blank">Сайт создан Иваном Поддубным</a>
-        </p>
-    </footer> -->
-
     <!-- модальное окно -->
     <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
         <div class="modal__overlay" tabindex="-1" data-micromodal-close>

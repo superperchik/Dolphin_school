@@ -17,32 +17,39 @@
     <div class="wrapper">
         <header class="page-header">
             <div class="part1">
-                <a class="logo" href="#">
+                <a class="logo" href="index.php">
                     <img class="logo-img" src="assets/images/main/logotip.jpg" alt="Dolphin, языковая школа">
                 </a>
             </div>
             <div class="part2">
                 <h1>Школа Англиского языка Dolphin School</h1>
             </div>
-            <div class="part3">
-                <a class="english-chg"><span>ENG</span></a>
+            <?php if(isset($_SESSION['user'])) {?>
+            <div class="part4">
+                <a class="exit-chg" href="vendor/logout.php">Выйти</a>
             </div>
-
+            <?php } ?>
+            <div class="part3">
+                <a class="english-chg" href="loginpage.php">English</a>
+            </div>
         </header>
 
         <nav>
             <ul class="sidenav">
                 <li class="page-menu-item ">
-                    <a class="page-menu-link page-menu-link-cab-manual" href="index.html">Главная</a>
+                    <a class="page-menu-link page-menu-link-cab-manual" href="index.php">Главная</a>
                 </li>
                 <li class="page-menu-item ">
-                    <a class="page-menu-link page-menu-link-book" href="manualpage.html">Методичка</a>
+                    <a class="page-menu-link page-menu-link-book" href="manualpage.php">Методичка</a>
                 </li>
                 <li class="page-menu-item">
                     <a class="page-menu-link page-menu-link-home" href="homeworkpage.php">Домашняя работа</a>
                 </li>
                 <li class="page-menu-item page-menu-item-active">
-                    <a class="page-menu-link page-menu-link-exam-active" href="testpage.html">Тесты</a>
+                    <a class="page-menu-link page-menu-link-exam-active" href="#">Тесты</a>
+                </li>
+                <li class="page-menu-item">
+                    <a class="page-menu-link page-menu-link-about" href="aboutus.php">О нас</a>
                 </li>
             </ul>
         </nav>

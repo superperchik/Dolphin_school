@@ -320,6 +320,5 @@ button.addEventListener("click", function() {
 
 var button = document.querySelector(".item-1");
 button.addEventListener("click", function() {
-    alert("huita");
     MicroModal.show("modal-item-1");
 });

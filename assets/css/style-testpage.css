@@ -109,6 +109,12 @@
   margin-right: auto;
 }
 
+@media screen and (max-width: 1024px) {
+  .page-header .part2 h1 {
+    font-size: 26px;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .testcards-block {
     margin-left: 5%;

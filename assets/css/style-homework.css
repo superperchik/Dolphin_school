@@ -49,6 +49,15 @@
   margin-left: 10%;
 }
 
+.page-main-homework .form-teacher {
+  margin-top: 55px;
+  margin-left: 10%;
+}
+
+.page-main-homework .form-teacher .form__control--textarea {
+  height: 350px;
+}
+
 .page-main-homework .tittle-homework {
   margin-top: 35px;
   margin-left: 20px;
@@ -251,7 +260,7 @@
   }
   .messadge {
     width: 50%;
-    height: auto;
+    height: 150px;
     margin-top: 15%;
     margin-bottom: 20%;
     margin-left: 25%;
@@ -259,7 +268,7 @@
   .messadge .messadge-info {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    font-size: 16px;
+    font-size: 20px;
     color: #576BCC;
     text-align: center;
     margin-bottom: 10%;
@@ -268,9 +277,32 @@
   .messadge .messadge-link {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    height: 10px;
-    font-size: 12px;
+    height: 16px;
+    font-size: 20px;
     margin-left: 40%;
+  }
+  .page-main-homework .homework-description .hide-work {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .messadge .messadge-info {
+    font-size: 16px;
+  }
+  .messadge .messadge-link {
+    font-size: 14px;
+    margin-left: 35%;
+  }
+  .hide-work {
+    font-size: 12px;
+  }
+  .page-main-homework .homework-description .hide-work {
+    font-size: 14px;
+    width: 25%;
+    height: 50px;
+    bottom: 5%;
+    right: 15%;
   }
 }
 /*# sourceMappingURL=style-homework.css.map */
